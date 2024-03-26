@@ -1,3 +1,9 @@
+<?php
+
+require_once "includes/actions.php";
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,9 +15,10 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <h1>みくみくにしてあげる</h1>
-    <p>Why am I still here, just to suffer.</p>
-    <p>I can't feel my legs</p>
-    <p>Or something IDK</p>
+<h1>みくみくにしてあげる</h1>
+<p>Why am I still here, just to suffer.</p>
+<p>I can't feel my legs</p>
+<p>Or something IDK</p>
 </body>
 </html>
+
