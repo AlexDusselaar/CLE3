@@ -1,0 +1,17 @@
+{
+  "manifest_version": 1,
+  "name": "disability finder",
+  "version": "1.0",
+  "description": "heeft u moeite met het vinden van toegankenlijkheids paginas vinden? dan is dit de oplossing voor u!",
+  "browser_action": {
+    "default_title": "disability finder",
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
