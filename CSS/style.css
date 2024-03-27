@@ -1,3 +1,8 @@
-h1 {
-    font-size: 7rem;
+body {
+    width: 200px;
+    text-align: center;
+    text-decoration-color: black;
+}
+img {
+    max-width: 100%;
 }
