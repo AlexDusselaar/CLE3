@@ -1,8 +1,4 @@
-<?php
 
-require_once "includes/actions.php";
-
-?>
 
 <!doctype html>
 <html lang="en">
