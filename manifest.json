@@ -2,6 +2,12 @@
   "manifest_version": 1,
   "name": "disability finder",
   "version": "1.0",
+  "content_scripts": [
+{
+  "matches": ["<all_urls>"],
+  "js": ["main.js"]
+}
+  ],
   "description": "heeft u moeite met het vinden van toegankenlijkheids paginas vinden? dan is dit de oplossing voor u!",
   "browser_action": {
     "default_title": "disability finder",
