@@ -36,4 +36,10 @@ button{
     font-size: 1.5rem;
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: 2px 2px 4px rgba(106, 106, 106, 0.5);
+}
+
+button:active {
+    background-color: #146C94;
+    box-shadow: -2px -2px 4px rgb(255, 255, 255);
 }
