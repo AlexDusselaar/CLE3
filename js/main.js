@@ -1,19 +1,21 @@
-//  uitzoeken plugin showen.
-//  documentatie zoeken hoe je html code van site onder popup mag aanroepen.
-//  hoe ga je toegankenlijkheid vinden op de site, zoek functie
-// onderzoek naar toegankenlijkheid paginas
-
-
 window.addEventListener('load', init);
 
 
-function init(){
-
+function init() {
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        let tabUrl = tabs[0].url;
+        console.log(tabUrl);
+    });
 }
 
 
 
-function ajaxRequest(url, succesHandeler){
+
+function SuccesHandeler(){
+
+}
+
+function ajaxRequest(url,){
     fetch(url)
         .then((response) => {
             if (!response.ok) {
@@ -21,11 +23,9 @@ function ajaxRequest(url, succesHandeler){
             }
             return response.json();
         })
-        .then(succesHandeler)
+        .then(SuccesHandeler)
         .catch(ErrorHandeler);
 }
-
-
 
 
 function ErrorHandeler(data){
