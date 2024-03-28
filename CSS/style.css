@@ -1,11 +1,20 @@
 body {
-    width: 100vw;
-    height: 100vw;
+    width: 250px;
+    height: 250px;
     text-align: center;
-    text-decoration-color: #0D425A;
+    color: #0D425A;
     background-color: #F6F1F1;
 }
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+b {
+    font-weight: bolder;
 }
