@@ -2,8 +2,9 @@ body {
     width: 200px;
     text-align: center;
     text-decoration-color: black;
-    background-color: blue;
+    background-color: #F6F1F1;
 }
+
 img {
     max-width: 100%;
 }
