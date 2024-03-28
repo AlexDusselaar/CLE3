@@ -2,7 +2,7 @@ window.addEventListener('load', init);
 
 
 function init() {
-    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
         let tabUrl = tabs[0].url;
         console.log(tabUrl);
     });
