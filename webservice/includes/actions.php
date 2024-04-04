@@ -12,7 +12,7 @@ function getURL()
         ],
         [
             "id" => 2,
-            "name" => "drievliet",
+            "name" =>"drievliet",
             "url" => "https://www.drievliet.nl/vragen/entree/item/512-minder-valide-bezoeker",
         ],
         [
