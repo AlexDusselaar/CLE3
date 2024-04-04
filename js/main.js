@@ -70,7 +70,6 @@ function checkIfExists(){
     }
 }
 
-
 function ajaxRequest(url){
     fetch(url)
         .then((response) => {
