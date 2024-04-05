@@ -2,58 +2,107 @@
 /**
  * @return array
  */
-function getDishes()
+function getURL()
 {
     return [
         [
             "id" => 1,
-            "name" => "Pizza",
-            "kitchen" => "Italian",
+            "name" => "efteling",
+            "url" => "https://www.efteling.com/nl/park/informatie/bezoekers-met-een-beperking/ontdek-het-park",
         ],
         [
             "id" => 2,
-            "name" => "Kale",
-            "kitchen" => "Dutch",
+            "name" =>"drievliet",
+            "url" => "https://www.drievliet.nl/vragen/entree/item/512-minder-valide-bezoeker",
         ],
         [
             "id" => 3,
-            "name" => "Lasagna",
-            "kitchen" => "Italian",
+            "name" => "duinrell",
+            "url" => "https://www.duinrell.nl/attractiepark/praktische-informatie",
         ],
         [
             "id" => 4,
-            "name" => "Kebab",
-            "kitchen" => "Turkish",
+            "name" => "hellendoorn",
+            "url" => "https://www.avonturenpark.nl/bezoek-plannen/toegankelijkheid",
         ],
         [
             "id" => 5,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "julianatoren",
+            "url" => "https://www.julianatoren.nl/info/mindervaliden/",
         ],
         [
             "id" => 6,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "plopsaland",
+            "url" => "https://www.plopsaindoorcoevorden.nl/nl/praktische-info/personen-met-een-handicap",
         ],
         [
             "id" => 7,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "slagharen",
+            "url" => "https://www.slagharen.com/bereid-uw-bezoek-voor/mensen---diensten/bezoekers-met-een-beperking",
         ],
         [
             "id" => 8,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "toverland",
+            "url" => "https://www.toverland.com/attractiepark/bezoekers-met-een-beperking?_gl=1*89c5v4*_up*MQ..*_ga*MTcyMjkyNzE5Ny4xNzExNTQzNzA1*_ga_M8V55LPVR5*MTcxMTU0MzcwNS4xLjAuMTcxMTU0MzcxMi4wLjAuMTQwNTc0MzIw",
         ],
         [
             "id" => 9,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "walibi",
+            "url" => "https://www.walibi.nl/nl/toegankelijkheidsregeling",
         ],
         [
             "id" => 10,
-            "name" => "Paella",
-            "kitchen" => "Spanish",
+            "name" => "annefrankhuis",
+            "url" => "https://www.annefrank.org/nl/museum/praktische-informatie/toegankelijkheid/",
+        ],
+        [
+            "id" => 11,
+            "name" => "vangoghmuseum",
+            "url" => "https://www.vangoghmuseum.nl/nl/bezoek/toegankelijkheid",
+        ],
+        [
+            "id" => 12,
+            "name" => "rijksmuseum",
+            "url" => "https://www.rijksmuseum.nl/nl/bezoek/toegankelijk",
+        ],
+        [
+            "id" => 13,
+            "name" => "maritiemmuseum",
+            "url" => "https://maritiemmuseum.nl/toegankelijkheid",
+        ],
+        [
+            "id" => 14,
+            "name" => "boijmans",
+            "url" => "https://www.boijmans.nl/toegankelijkheid",
+        ],[
+            "id" => 15,
+            "name" => "apenheul",
+            "url" => "https://apenheul.nl/plan-je-bezoek/toegankelijkheid",
+        ],
+        [
+            "id" => 16,
+            "name" => "blijdorp",
+            "url" => "https://diergaardeblijdorp.nl/nl/ontdek-blijdorp/veelgestelde-vragen",
+        ],
+        [
+            "id" => 17,
+            "name" => "burgerszoo",
+            "url" => "https://www.burgerszoo.nl/toegankelijkheid",
+        ],
+        [
+            "id" => 18,
+            "name" => "dierenparkamersfoort",
+            "url" => "https://dierenparkamersfoort.nl/contact/",
+        ],
+        [
+            "id" => 19,
+            "name" => "beeksebergen",
+            "url" => "https://www.beeksebergen.nl/toegankelijkheid",
+        ],
+        [
+            "id" => 20,
+            "name" => "wildlands",
+            "url" => "https://www.wildlands.nl/plan-je-bezoek/mindervaliden",
         ]
     ];
 }
@@ -62,30 +111,4 @@ function getDishes()
  * @param $id
  * @return mixed
  */
-function getDishDetails($id)
-{
-    $tags = [
-        1 => [
-            "recipe" => "Put it in the oven and go!",
-            "tags" => ['cheese', 'oven']
-        ],
-        2 => [
-            "recipe" => "You can make this delicious Dutch meal by ...",
-            "tags" => ['unox', 'healthy', 'stamppot', 'boerenkool']
-        ],
-        3 => [
-            "recipe" => "Very nice when your grandma prepares this meal",
-            "tags" => ['omnomnom']
-        ],
-        4 => [
-            "recipe" => "Everytime in the city after midnight",
-            "tags" => ['kapsalon', 'tasty', 'meat']
-        ],
-        5 => [
-            "recipe" => "Specialty when on holiday in Spain",
-            "tags" => ['fish']
-        ],
-    ];
 
-    return $tags[$id];
-}
