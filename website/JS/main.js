@@ -40,15 +40,15 @@ function logData(data) {
         ul.append(li)
 
         let p = document.createElement("p")
-        p.innerText = result.name
+        p.innerText = result.name.charAt(0).toUpperCase() + result.name.substring(1)
         li.append(p)
 
         let pagesDiv = document.createElement("div")
         li.append(pagesDiv)
 
-        let pageButton = document.createElement("button")
+        let pageButton = document.createElement("a")
         pageButton.textContent = "Bezoek pagina"
-        pageButton.id = result.id
+        pageButton.href = result.url
         pageButton.classList.add("pagina-button")
         pagesDiv.append(pageButton)
 
@@ -70,18 +70,9 @@ function errorHandler(error){
 function liClickHandler(event) {
     if (event.target.nodeName === "BUTTON") {
 
-            // details
-        if (event.target.className === "pagina-button") {
-            let movie = movieData[event.target.id];
-
-            let movieUrl = "../webservice/index.php?id=" + movie.id
-
-            getData(movieUrl, modalSuccesHandler);
-
-            // watchlist
-        } else if (event.target.className !== "pagina-button") {
+        if (event.target.className !== "pagina-button") {
             let clickedItem = event.target;
-                clickedItem.classList.toggle('on-watchlist');
+                clickedItem.classList.toggle('favoriet');
                 if (clickedItem.innerText === "Verwijder uit favorieten") {
                     clickedItem.innerText = "Toevoegen aan favorieten";
                     let itemIndex = items.indexOf(clickedItem.dataset.name)
