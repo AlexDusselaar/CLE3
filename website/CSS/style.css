@@ -45,6 +45,19 @@ main a {
     text-align: center;
 }
 
+#pages-section a, #pages-section button {
+    color: white;
+    background-color: #19A7CE;
+    border: none;
+    border-radius: 8vw;
+    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(106, 106, 106, 0.5);
+    transition: 0.5s ease-in-out;
+    min-width: 20vw;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .buttons {
     display: flex;
     gap: 10vw;
@@ -96,7 +109,7 @@ ul {
 li {
     display: flex;
     gap: 10vw;
-    border-style: solid;
+    border-bottom: solid;
 }
 
 footer {
@@ -104,7 +117,6 @@ footer {
     justify-content: space-between;
     background-color: #19A7CE;
     padding: 3vh 5vw 3vh 5vw;
-
     color: #F6F1F1;
 }
 
@@ -112,7 +124,18 @@ footer p {
     color: #fff;
 }
 
+li {
+    display: flex;
+    justify-content: space-between;
+}
+
 /* WEBSITES LIJST STYLING */
 li p {
-   margin: 2vw;
+    margin: 2vw;
+}
+
+li div {
+    display: flex;
+    margin: 2vh;
+    gap: 3vw;
 }
