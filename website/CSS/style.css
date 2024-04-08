@@ -111,3 +111,8 @@ footer {
 footer p {
     color: #fff;
 }
+
+/* WEBSITES LIJST STYLING */
+li p {
+   margin: 2vw;
+}
