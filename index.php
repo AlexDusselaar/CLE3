@@ -26,7 +26,7 @@
         <h2>Participating websites:</h2>
         <ul>
             <li>
-                <a href="https://example.com/cle3group6">Website of CLE 3 group 6</a>
+                    <a href="https://example.com/cle3group6">Website of CLE 3 group 6</a>
             </li>
         </ul>
     </article>
